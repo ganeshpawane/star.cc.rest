@@ -20,7 +20,7 @@ To start the karaf run:
 To install bundle in karaf run:
 	install file:/path/to/bundle.jar
 
-Internal dependancy of bundle:
+Internal Dpendancy of bundle:
 
 	InstrumentModel--->(None)
 	database--->InstrumentModel
