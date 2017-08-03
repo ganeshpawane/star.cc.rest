@@ -14,9 +14,9 @@ public interface StarService {
 	@Path("/")
 	public void addInstrument(Instrument instrument);
 	
-	/*@GET
+	@GET
 	@Path("/")
 	public Instrument[] getAll();
-	*/
-	//public Instrument getInstrumentFromMap(String symbol);
+	
+	public Instrument getInstrumentFromMap(String symbol);
 }

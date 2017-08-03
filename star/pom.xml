@@ -56,6 +56,9 @@
 				<configuration>
 					<instructions>
 						<_include>-bnd.bnd</_include>
+						<Export-Package>*</Export-Package>
+						<Bundle-Name>${project.artifactId}</Bundle-Name>
+						<Bundle-Version>${project.version}</Bundle-Version>
 					</instructions>
 				</configuration>
 			</plugin>

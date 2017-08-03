@@ -32,10 +32,11 @@
 
 	<!-- <reference id="dbServiceImpl" interface="com.cme.sample.db.service.DbService" /> -->
 
-	<bean id="ccServiceImpl" class="com.cme.sample.cc.serviceimpl.InstrumentServiceImpl" />
+	<bean id="ccServiceImpl" class="com.cme.sample.cc.serviceimpl.InstrumentServiceImpl" init-method="init" destroy-method="stop" />
 	
-	<service ref="ccServiceImpl" interface="com.cme.sample.cc.service.InstrumentService" />
-	
+	<!-- <service ref="ccServiceImpl" interface="com.cme.sample.cc.service.InstrumentService" />
+	 -->
+	 
 	<jaxrs:server address="/instrument" id="ccService">
 		<jaxrs:serviceBeans>
 			<ref component-id="ccServiceImpl" />

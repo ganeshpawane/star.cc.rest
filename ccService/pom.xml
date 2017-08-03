@@ -16,6 +16,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
@@ -23,9 +28,11 @@
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>database</artifactId>
+			<artifactId>star</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<!-- <dependency> <groupId>${project.groupId}</groupId> <artifactId>database</artifactId> 
+			<version>${project.version}</version> </dependency> -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>InstrumentModel</artifactId>

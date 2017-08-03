@@ -27,7 +27,8 @@
   ">
     <cxf:bus id="starRestBus">
     </cxf:bus>
-    <reference id="ccServiceImpl" interface="com.cme.sample.cc.service.InstrumentService" />
+    
+    <!-- <reference id="ccServiceImpl" interface="com.cme.sample.cc.service.InstrumentService" /> -->
    
     <bean id="starServiceImpl" class="com.cme.sample.star.service.impl.StarServiceImpl" />
    <!-- 
